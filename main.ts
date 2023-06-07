@@ -1,13 +1,10 @@
-function convertPressure () {
-    hPa = Math.idiv(weatherbit.pressure(), 25600)
-}
 input.onButtonPressed(Button.A, function () {
     convertTemp()
     convertRH()
-    convertPressure()
-    serial.writeValue("Temp F", tempCelsius)
-    serial.writeValue("Humidity %", RH)
-    serial.writeValue("hPa", hPa)
+    serial.writeValue("Temp (C)", tempCelsius)
+    serial.writeValue("Humidity (%)", RH)
+    serial.writeValue("Dewpoint (C)", BME280.Dewpoint())
+    serial.writeValue("Pressure (hPa)", BME280.pressure(BME280_P.hPa))
 })
 function convertTemp () {
     tempCelsius = Math.idiv(weatherbit.temperature(), 100)
@@ -19,7 +16,6 @@ function convertRH () {
 let tempFarenheit = 0
 let RH = 0
 let tempCelsius = 0
-let hPa = 0
 weatherbit.startWeatherMonitoring()
 basic.forever(function () {
 	
