@@ -17,6 +17,3 @@ let tempFarenheit = 0
 let RH = 0
 let tempCelsius = 0
 weatherbit.startWeatherMonitoring()
-basic.forever(function () {
-	
-})

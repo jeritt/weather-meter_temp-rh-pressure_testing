@@ -1,5 +1,5 @@
 {
-    "name": "weather-meter_temp-rh-pressure_testing",
+    "name": "weather-meter_temp-rh-pressure-dewpoint",
     "description": "",
     "dependencies": {
         "core": "*",
