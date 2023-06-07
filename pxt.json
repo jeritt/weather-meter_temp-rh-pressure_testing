@@ -1,11 +1,13 @@
 {
-    "name": "weather-meter_temp-rh-pressure_testing",
+    "name": "weather-meter_putting-it-all-together",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "weatherbit": "github:sparkfun/pxt-weather-bit#v0.0.19"
+        "weatherbit": "github:sparkfun/pxt-weather-bit#v0.0.19",
+        "microbit-pxt-timeanddate": "github:bsiever/microbit-pxt-timeanddate#v2.0.33",
+        "BME280": "github:makecode-extensions/bme280#v1.1.0"
     },
     "files": [
         "main.blocks",
